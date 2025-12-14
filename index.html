@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante Aurora | Vacantes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-semibold d-flex align-items-center" href="#">
+            <img src="assets/img/logo.jpg" alt="Logo" width="70" height="70" class="me-2">
+            Restaurantes Monserrate
+        </a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero-section text-center">
+    <div class="container">
+        <h1>Únete a Nuestro Equipo</h1>
+        <p class="lead">Talento que hace la diferencia</p>
+    </div>
+</header>
+
+<!-- BENEFICIOS -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Beneficios de trabajar con nosotros</h2>
+    <div class="row text-center g-4">
+
+        <div class="col-md-4">
+            <div class="card benefit-card h-100 p-3 text-dark">
+                <div class="card-body">
+                    <i class="bi bi-people-fill display-4 mb-3"></i>
+                    <h5 class="card-title">Excelente ambiente</h5>
+                    <p class="card-text">Trabajarás con un equipo profesional y amigable, fomentando colaboración y crecimiento.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card benefit-card h-100 p-3 text-dark">
+                <div class="card-body">
+                    <i class="bi bi-book-fill display-4 mb-3"></i>
+                    <h5 class="card-title">Capacitación continua</h5>
+                    <p class="card-text">Entrenamiento constante para mejorar habilidades y crecer profesionalmente.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card benefit-card h-100 p-3 text-dark">
+                <div class="card-body">
+                    <i class="bi bi-gift-fill display-4 mb-3"></i>
+                    <h5 class="card-title">Beneficios adicionales</h5>
+                    <p class="card-text">Seguro médico, bonificaciones, descuentos y horarios flexibles.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- VACANTES -->
+<section class="container my-5">
+    <h2 class="text-center mb-4">Vacantes Disponibles</h2>
+    <div class="row g-4">
+
+        <!-- Fila 1 -->
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Chef Ejecutivo</h5>
+                    <p class="card-text">Lidera la cocina del restaurante</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Chef Ejecutivo', 'Responsable de planificación de menús, supervisión y control de calidad.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sous Chef</h5>
+                    <p class="card-text">Apoyo en cocina</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Sous Chef', 'Asiste al Chef Ejecutivo, prepara platos y coordina al equipo de cocina.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Mesero Senior</h5>
+                    <p class="card-text">Atención al cliente premium</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Mesero Senior', 'Atiende a clientes VIP, toma de pedidos, coordina servicio de mesa.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Bartender</h5>
+                    <p class="card-text">Preparación de bebidas</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Bartender', 'Preparación de cocteles y bebidas, atención en barra.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Pastelero</h5>
+                    <p class="card-text">Postres y repostería</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Pastelero', 'Elaboración de postres y pasteles, creatividad en presentación.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Cajero</h5>
+                    <p class="card-text">Gestión de pagos</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Cajero', 'Cobros, manejo de efectivo y cortes de caja.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Lavaplatos</h5>
+                    <p class="card-text">Apoyo en cocina</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Lavaplatos', 'Limpieza de utensilios y apoyo a cocina.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Recepcionista</h5>
+                    <p class="card-text">Atención a clientes</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Recepcionista', 'Recibir clientes, gestionar reservaciones y coordinar mesas.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Sommelier</h5>
+                    <p class="card-text">Experto en vinos</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Sommelier', 'Selección y recomendación de vinos, armonización con menús.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fila 4 -->
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Coctelero</h5>
+                    <p class="card-text">Bebidas creativas</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Coctelero', 'Creación de bebidas exclusivas y atención personalizada en barra.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Encargado de Eventos</h5>
+                    <p class="card-text">Organización de eventos</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Encargado de Eventos', 'Planificación y coordinación de eventos privados y corporativos.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card vacancy-card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Ayudante de Cocina</h5>
+                    <p class="card-text">Apoyo general</p>
+                    <button class="btn btn-outline-dark w-100"
+                        onclick="openVacancy('Ayudante de Cocina', 'Preparación de ingredientes, apoyo a chefs y limpieza de área.')">
+                        Ver Vacante
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODAL VACANTE -->
+<div class="modal fade" id="vacancyModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title" id="vacancyTitle"></h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <p id="vacancyDescription"></p>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-dark" onclick="openForm()">Aplicar</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MODAL FORMULARIO -->
+<div class="modal fade" id="formModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Formulario de Aplicación</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <form id="applyForm">
+                <div class="modal-body">
+
+                    <input type="hidden" id="puesto">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Experiencia</label>
+                        <textarea class="form-control" rows="3" required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subir CV (PDF)</label>
+                        <input type="file" class="form-control" id="cvFile" accept=".pdf" required>
+                        <div class="form-text">Solo se aceptan archivos PDF.</div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-success w-100" type="submit">
+                        Enviar Solicitud
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
